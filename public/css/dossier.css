@@ -1,0 +1,1653 @@
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+  box-sizing: border-box;
+  margin: 0; /* Pour enlever les marges par défaut du navigateur */
+  padding: 0; 
+}
+body{
+/* Pour enlever le padding par défaut du navigateur */
+/* 100% de la hauteur de la fenêtre visible */
+  width: 100vw;
+margin: 0;
+padding: 0;
+height: 100vh;
+/*width: 100vw;*/
+}
+
+.container {
+display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+   /* Ensure the container fills the entire height of the body */
+}
+
+.nav-gauche {
+background: #005E5D;
+flex: 0 0 auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 6px 8px 0; 
+gap: 4vh;
+
+}
+
+.cote-droit{    display: flex;
+flex-direction: column;
+width: 100vw;
+height: 100%;}
+
+.logo img{
+width: 35px;
+height: 35px;
+margin-bottom: 100px;
+margin-top: 10px;
+}
+
+.home img,
+.salles img,
+.dossierP img {
+width: 30px;
+height: 30px;
+}
+
+
+
+/*nav haut*/
+.nav{
+
+position: fixed;
+display: flex;
+/* height: 100vw; */
+width: 100%;
+flex-direction: column;
+}
+
+.nav-haut {
+gap: 10px;
+background: #005E5D;
+display: flex;
+justify-content: space-around;
+flex-direction: row;
+align-items: center;
+}
+
+.service {
+background: #77A6A5;
+padding: 14px;
+display: flex; 
+align-items: center;
+gap: 20px;
+}
+.urgences {
+width: 8vw;
+overflow-wrap: break-word;
+font-weight: 500 !important;
+font-size: 16px !important;
+color: #FFFFFF;
+}
+
+.x {
+margin: 2px 0;
+width: 24px;
+height: 24px;
+padding-right: 5px;
+}
+
+
+
+.select-service {
+border-radius: 2px;
+background: #FFFFFF;
+position: relative;
+margin: 11px 28px 7px 0;
+display: flex;
+flex-direction: row;
+padding: 8px 8px 8px 8px;
+width: 500px;
+height: fit-content;
+}
+
+.clock {
+gap: 10px;
+display: flex;
+justify-content: center;
+position: relative;
+height: fit-content;
+color: #FFFFFF;
+}
+
+.column1 span {
+display: block;
+margin-top: 3px;
+}
+
+.linehor {
+background: #FFFFFF;
+width: 3px;
+height: 40px;
+}
+
+.column, .heure {
+font-weight: 500;
+}
+
+.column {
+font-size: 35px;
+
+}
+
+.column1 {
+font-size: 14px;
+flex-grow: 1;
+}
+
+.heure {
+font-size: 35px;
+text-align: center;
+}
+
+.param {
+margin-left: auto;
+display: flex;
+gap: 10px;
+}
+
+.compte {
+display: flex;
+flex-direction: column;
+padding-right: 1vw;
+margin-right: 50px;
+}
+
+.nom-prenom{
+
+color: #FFFFFF;
+font-weight: 500;
+font-size: 16px;
+}
+
+.fonction{
+color: #FFFFFF;
+align-self: flex-start;
+overflow-wrap: break-word;
+font-style: italic;
+font-weight: 400;
+font-size: 14px;
+
+}
+
+.nav2{
+display: flex;
+align-items: center;
+background-color:rgba(217, 217, 217, 0.61) ;
+gap: 10px;
+}
+
+.dossierEtat img {
+width: 40px;
+height: 40px;
+margin-right: 10px;
+}
+
+.infoPatient img {
+width: 40px;
+height: 40px;
+}
+
+.mesurePatient img {
+width: 40px;
+height: 40px;
+}
+
+.infoPatient,.mesurePatient{
+display: flex;
+align-items: center;
+}
+
+.nomPrenom, .dossier-heure, .localisation{
+font-weight: 500;
+font-size: 16px;
+line-height: 0.7;
+}
+
+.dossier-date, .urgences {
+font-weight: 400;
+font-size: 14px;
+line-height: 1;
+}
+
+.centrer_date_urg {
+align-items: center;
+}
+
+.hebergement, .medical{
+font-weight: 400;
+font-size: 14px;
+line-height: 0.9;
+}
+
+.naiss {
+font-weight: 400;
+font-size: 13px;
+}
+
+.poids, .taille {
+font-weight: 500;
+font-size: 13px;
+}
+
+p {
+margin: 3px;
+}
+
+.naiss-IP{
+display: flex;
+padding-top: 2px;
+align-items: center;
+}
+
+.mesurePatient {
+margin-left: auto;
+padding-right: 70px;
+}
+
+.dossierSalle{
+display: flex;
+}
+
+.dossierDate div{
+display: flex;
+flex-direction: column;
+}
+
+.dossierSalle div{
+display: flex;
+flex-direction: column;
+}
+
+.dossierDate, .dossierSalle{
+display: flex;
+align-items: center;
+}
+
+.line{
+background: #000000;
+margin-right: 20px;
+margin-left: 20px;
+width: 1px;
+height: 6vh;
+}
+
+.nav3 {
+display: flex;
+background-color: #D6D6D6;
+font-size: 18px;
+align-items: center;
+}
+
+.nav3 a {
+display: inline-flex;
+align-items: center;
+text-decoration: none;
+padding-right: 7px;
+color: #000000;
+}
+
+.nav3 img {
+width: 23px;
+height: 23px;
+margin-right: 5px;
+}
+
+.nav3 a:hover,
+.nav3 a.active {
+background-color: #353434;
+color: #FFFFFF;
+padding: 3px;
+}
+
+.nav3 a:hover img,
+.nav3 a.active img {
+filter: brightness(0) invert(1);
+}
+
+.nav4 {
+display: flex;
+align-items: center;
+gap: 10px;
+background: #FFFFFF;
+}
+
+.sejour {
+width: 25px;
+height: 25px;
+}
+
+.patientim {
+width: 28px;
+height: 28px;
+}
+
+.nav4 a {
+display: inline-flex;
+text-decoration: none;
+align-items: center;
+color: #000000;
+}
+
+.nav4 a:hover,
+.nav4 a.active4 {
+background-color: #FFFFFF;
+color: #005E5D;
+border-bottom: 3px solid #005E5D;
+}
+
+.nav4 a:hover img,
+.nav4 a.active4 img {
+filter: brightness(0) saturate(100%) invert(26%) sepia(41%) saturate(1481%) hue-rotate(139deg) brightness(93%) contrast(100%);
+}
+
+.main-general{
+display: flex;
+/* position: fixed; */
+flex-direction: column;
+width: 100%;
+/* padding-left: 7.7vw; */
+margin-top: 200px;
+padding-bottom: 10PX;
+gap: 10px;
+padding-right: 20px;
+/* z-index: 1; */
+overflow: auto;
+/* height: 100vw;*/
+
+}
+.main-generalInfoP{
+display: flex;
+/* position: fixed; */
+flex-direction: column;
+/* padding-left: 7.7vw; */
+margin-top: 200px;
+padding-bottom: 10PX;
+gap: 10px;
+margin-right: 5vw;
+margin-left: 50px;
+/* z-index: 1; */
+overflow: auto;
+/* height: 100vw;*/
+font-size: 18px;
+
+
+}
+.ordSortie{
+display: flex;
+/* position: fixed; */
+flex-direction: column;
+/* padding-left: 7.7vw; */
+margin-top: 200px;
+padding-bottom: 2vw;
+gap: 10px;
+margin-right: 5vw;
+margin-left: 50px;
+/* z-index: 1; */
+overflow: auto;
+ height: 100vh;
+ width: 90vw;
+font-size: 18px;
+}
+.adrTel div{  display: flex;
+align-items: center;
+gap: 1vw;}
+.main-general::-webkit-scrollbar {
+display: none;
+}
+.main-generalInfoP::-webkit-scrollbar {
+display: none;
+}
+.titrePatient {
+display: flex;
+align-items: center;
+gap: 2vw;
+background-color:rgba(217, 217, 217, 0.61);;
+
+}
+
+.adrTel {
+margin-left: 2px;
+display: flex;
+flex-direction: column;
+gap: 5px;}
+.adrTel img{
+width: 30px;
+height: 30px;
+}
+.titrePatient img{width: 35px;height: 35px;}
+.main-general img{
+width: 25px;
+height: 25px;
+}
+
+.priseEnCharge{
+display: flex;
+align-items: baseline;
+
+}
+.priseEnCharge div {margin: 5px;}
+.ligne-1,.ligne-3,
+.ligne-2,.ligne-4,
+.ligne-5{ 
+  display: grid;gap: 10px;
+}
+.ligne-1{
+  grid-template-columns: auto auto auto;
+}
+.ligne-2,.ligne-4
+{
+ grid-template-columns: auto auto auto auto;
+}
+.ligne-3
+{
+grid-template-columns: auto auto ;
+}
+.ligne-5
+{
+  grid-template-columns:auto auto;
+}
+
+.admission, .medecins, .personneConfidente, .allergies, .antecedents, .observations, 
+.vaccins, .examenParamedical, .examenMedical, .conclusion, .constantes, .fiche, 
+.prescription, .orientation, .documents {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+color:#005E5D;
+height: 14vh;
+border-radius: 5px;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+background: #FFFFFF;
+font-weight: 500;
+padding: 10px;
+gap: 5px;
+}
+.prescription div{ 
+margin-left: 4%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.admission a, .medecins a, .personneConfidente a, .allergies a, .antecedents a, .observations a, 
+.vaccins a, .examenParamedical a, .examenMedical a, .conclusion a, .constantes a, .fiche a, 
+.prescription a, .orientation a, .documents a {
+display: inline-flex;
+text-decoration: none;
+align-items: center;
+color: #005E5D;
+margin-left: 5px;
+}
+
+
+.popupOrientation,
+.popupConclusion,
+.popupAdmission,
+.popupExamenMed,
+.popupExamenParaMed,
+.popupPersonneConfidente,
+.popupAllergies,
+.popupAntecedents,
+.popupMedecins,
+.popupObservations,
+.popupVaccins,
+.popupConstantes,
+.popupPrescription,
+.popupFiches,
+.popupDocuments ,
+.popupTaille {
+z-index: 1;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+display: none;
+justify-content: center;
+align-items: center;
+}
+
+.logoOrientation,
+.logoConclusion,
+.logoAdmission,
+.logoExamenMed,
+.logoExamenParaMed,.logoAllergies,
+.logoAntecedents,
+.logoPersonneConfidente,
+.logoMedecins,
+.logoObservations,
+.logoVaccins,
+.logoConstantes,
+.logoPrescription,
+.logoDocuments,.logoFiches{
+filter: brightness(0) saturate(100%) invert(99%) sepia(100%) saturate(0%) hue-rotate(152deg) brightness(102%) contrast(102%);
+}
+
+.popupOrientation-content ,
+.popupAdmission-content,
+.popupConclusion-content,
+.popupExamenMed-content,
+.popupExamenParaMed-content,
+.popupPersonneConfidente-content,.popupAllergies-content,
+.popupAntecedents-content,
+.popupMedecins-content,
+.popupObservations-content,
+.popupVaccins-content,
+.popupConstantes-content ,
+.popupPrescription-content,
+.popupFiches-content,
+.popupDocuments-content
+{
+position: absolute;
+top: 52%;
+left: 50%;
+transform: translate(-50%, -50%);
+display: flex; 
+flex-direction: column; /* Change la direction du flux en vertical */
+background-color: #f4f4f4;
+border-radius: 5px;
+width: 80%; /* Largeur fixe */
+height: 80%;
+}
+.popupTaille-content{
+position: absolute;
+top: 18%;
+right: 1%;
+transform: translate(-50%, -50%);
+display: flex; 
+flex-direction: column; /* Change la direction du flux en vertical */
+background-color: #f4f4f4;
+border-radius: 5px;
+width: 20vw; /* Largeur fixe */
+
+}
+.nav-orientation img,
+.nav-conclusion img,
+.nav-admission img,
+.nav-examenMed img,
+.nav-examenParaMed img,
+.nav-personneconfidente img,
+.nav-allergies img,
+.nav-antecedents img,
+.nav-medecins img,
+.nav-observations img,
+.nav-vaccins img,
+.nav-constantes img
+,.navPrescription img,
+.nav-fiches img,.nav-documents img{
+width: 25px;
+height: 25px;
+}
+.nav-orientation,
+.nav-conclusion,
+.nav-admission,
+.nav-examenMed,
+.nav-examenParaMed,
+.nav-personneconfidente ,
+.nav-allergies,
+.nav-antecedents,
+.nav-medecins,
+.nav-observations,
+.nav-vaccins,
+.nav-constantes
+,.navPrescription,
+.nav-fiches,.nav-documents ,.nav-Taille{
+background: #005e5d;
+display: flex;
+align-items: center; 
+border-top-left-radius: 5px;
+border-top-right-radius: 5px; /* Ajout de bordure supérieure droite */
+padding-left: 10px;
+padding-right: 10px;
+}
+.titre-orientation,
+.titre-conclusion,
+.titre-admission
+,.titre-examenMed,
+.titre-examenParaMed,
+.titre-personneconfidente,
+.titre-allergies,
+.titre-antecedents,
+.titre-medecins,
+.titre-observations,
+.titre-vaccins,
+.titre-constantes,
+.titre-prescription,
+.titre-Fiches,
+.titre-documents,
+.titre-taille{
+display:flex;
+align-items: center; 
+ 
+}
+.nav-orientation a,
+.nav-conclusion a,
+.nav-admission a,
+.nav-examenMed a,
+.nav-examenParaMed a,
+.nav-allergies a,
+.nav-antecedents a,
+.nav-personneconfidente a,
+.nav-medecins a,
+.nav-observations a,
+.nav-vaccins a,
+.nav-constantes a
+,.navPrescription a,
+.nav-fiches a,
+.nav-documents a,.nav-Taille a
+{
+margin-left: auto;
+}
+.nav-orientation h3 ,
+.nav-conclusion h3,
+.nav-admission h3,
+.nav-examenMed h3,
+.nav-examenParaMed h3,
+.nav-allergies h3,
+.nav-antecedents h3,
+.nav-personneconfidente h3,
+.nav-medecins h3,
+.nav-observations h3,
+.nav-vaccins h3,
+.nav-constantes h3
+,.navPrescription h3,
+.nav-fiches h3,
+.nav-documents h3,
+.sous-nav-fiches,.nav-Taille h3
+{
+margin: 0; 
+color: white; 
+font-weight: 500;
+padding: 10px; /* Ajout de rembourrage */
+}
+
+.nav-DetailOrientation {
+display: flex; /* Utilisation de flexbox */
+flex-direction: column; /* Affichage des éléments en colonne */
+gap: 4vh; /* Espacement entre les éléments */
+background:rgba(119, 166, 165, 1);
+padding: 50px 15px 10px 20px;
+width: 15%;
+}
+.nav-main{
+display: flex;
+width: 100%;
+height: 100%;
+}
+.nav-DetailOrientation a {
+display: flex;
+align-items: center;
+padding: 15px;
+background-color:rgba(0, 94, 93, 1);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+color: white;
+text-decoration: none;
+border-radius: 5px;
+gap: 7px;
+
+}
+
+.nav-DetailOrientation a img {
+width: 24px; /* Ajustement de la largeur */
+height: auto; /* Réglage automatique de la hauteur */
+}
+
+.nav-DetailOrientation a:hover,
+.nav-DetailOrientation a.active1 {
+background-color: rgba(217, 217, 217, 1);
+color: black;
+}
+.lien-prescription a:hover,
+.lien-prescription .active2 {
+text-decoration: underline;
+color:#005E5D;
+}
+.nav-DetailOrientation a:hover img,
+.nav-DetailOrientation a.active1 img {
+filter: brightness(0) saturate(100%) invert(0%) sepia(1%) saturate(5%) hue-rotate(223deg) brightness(98%) contrast(102%);
+}
+
+.mainOrientation {
+flex-grow: 1;
+background-color: rgba(217, 217, 217, 1); 
+width: 80%;
+}
+.nav-DetailOrientation p{
+font-size: 15px;
+font-weight: 500;
+}
+
+/* Formulaire */
+.form-sortie-hopital ,
+.form-uhcd, 
+.form-transfert , 
+.form-sortie-mutation, 
+.form-deces
+{
+display: flex;
+flex-direction: column;
+border-radius: 5px;
+margin: 4%;
+padding: 4%;
+overflow: auto;
+height: calc(100% - 10%);
+background-color: #FFFFFF;
+gap: 2vw;
+}
+.form-admission,
+.form-conclusion,
+.form-iao-gauche,
+.form-ExamenMed,
+.form-constantes
+,.form-ExamenClin,
+.form-personneConfidente,
+.form-médecin ,
+.form-observation,
+.form-antecedent,.form-allergie,
+.form-fiches,
+.form-vaccins
+,.form-documents,
+.form-medicament,
+.form-RxImagerie,
+.form-biologie,
+.form-surveillance,
+.form-autres,.form-taille{
+display: flex;
+flex-direction: column;
+gap: 1vw;
+}
+/* Etiquettes */
+.mainOrientation{ 
+font-weight: 500;
+color: #000000;
+}
+
+
+/* Radios */
+.form-sortie-hopital input[type="radio"] {
+margin-right: 5px;
+}
+
+/* Boutons */
+.G-button button 
+{
+border-radius: 5px;
+margin-right: 8px;
+margin-top: auto;
+display: flex;
+/* display: inline-block; */
+flex-direction: row;
+padding: 4px 11px 5px 8px;
+background-color: #005e5d;
+font-size: 18px;
+font-weight: 400;
+color: white;
+border: none;
+cursor: pointer;
+text-wrap: nowrap;
+
+}
+.popupTaille .G-button button 
+{
+border-radius: 5px;
+margin-right: 8px;
+margin-top: auto;
+display: flex;
+/* display: inline-block; */
+flex-direction: row;
+padding:5px 8px;
+background-color: #005e5d;
+font-weight: 400;
+color: white;
+border: none;
+cursor: pointer;
+
+
+}
+.G-button button img{
+width: 20px;
+height: 20px;
+margin-right: 10px;
+}
+
+.G-button {
+display: flex;
+margin-top: auto;
+margin-left: auto;
+
+}
+/* inputs and selects design*/
+
+#date_heure_mutation,.mobilité, 
+.div-transfert input,
+.div-transfert textarea,
+.div-sortie-mutation input ,
+.form-sortie-hopital select ,
+.div-sortie-mutation select ,
+.div-form-deces input,.div-admission input, 
+.div-admission select,
+.div-admission input,
+.form-médecin input ,
+.div-fiche input,
+.div-medicament input,
+.div-RxImagerie input,
+.div-biologie input,
+.div-surveillance input,.div-document input
+
+{
+padding: 8px 17.7px 4.8px 12.7px;
+width: 40%;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+.div-checkbox{
+display: flex;
+gap: 10%;
+
+}
+.div-checkbox input{
+padding: 8px 17.7px 4.8px 12.7px;
+border: 1px solid #ccc;
+border-radius: 4px; 
+}
+.div-checkbox div ,.div-sortie-hopital-center div{
+display: flex;
+gap: 10%;
+}
+/*le width des labels des forms*/
+
+.label-groupe,
+.div-checkbox label
+,.G-date_mutation label,
+.G-mobilité label ,.vide ,
+.form-sortie-hopital label ,
+.form-transfert label, 
+.form-sortie-mutation label,
+.form-deces label,
+.div-form-deces label,
+.div-form-conclusion label,
+.diagnosticsContainer div label,
+.ActesContainer label,.div-admission label,
+.div-ExamenMed label,
+.div-form-iao label,.div-form-iao-checkbox label 
+,.form-ExamenClin label,.form-médecin label,
+.div-ficheM label,
+.div-medicamentM label,
+.div-RxImagerieM label,
+.div-biologieM label,
+.div-surveillanceM label,
+.div-fiche label,
+.div-medicament label,
+.div-RxImagerie label,
+.div-biologie label,
+.div-surveillance label,
+.div-document label
+{
+width:15% ;
+}
+/*les divs des forms*/
+.G-groupe,.form-iao-droit
+.G-place,
+.G-date_mutation ,
+.G-mobilité ,
+.list,
+.div-sortie-hopital,
+.div-transfert, 
+.div-sortie-mutation
+,.div-form-deces
+,.form-deces,
+.div-ficheM ,
+.div-medicamentM ,
+.div-RxImagerieM ,
+.div-biologieM ,
+.div-surveillanceM ,
+.div-fiche ,
+.div-medicament ,
+.div-RxImagerie ,
+.div-biologie ,
+.div-surveillance,
+.div-document
+{
+display: flex;
+gap: 10%;
+}
+.div-sortie-hopital-center{
+display: flex;
+gap: 10%;
+align-items: center;
+}
+/*la div du groupe de formulaire uhcd*/
+.radio-group
+{
+display: flex;
+gap: 2%;
+}
+.radio-group div input{display: none;}
+.G-groupe .radio-group label
+{
+display: flex;
+padding: 10px 20px;
+background-color: #f0f0f0;
+color: #333;
+border: 1px solid #ccc;
+border-radius: 5px;
+cursor: pointer;
+gap: 15%;
+align-items: center;
+
+}
+.grouptxt{
+width: 3vw;
+}
+
+.radio-group label:hover 
+{
+background-color: #ddd;
+}
+.form-uhcd input[type="radio"]:checked + label
+{
+background-color: #77A6A5;
+color: #fff;
+border-color: #77A6A5;
+}
+.form-iao-droit input[type="radio"]:checked + label
+{
+background-color: #e6e6e6ae;
+-webkit-box-shadow: 0px 1px 10px 0px rgba(209,209,209,1);
+-moz-box-shadow: 0px 1px 10px 0px rgba(209,209,209,1);
+box-shadow: 0px 1px 10px 0px rgba(209,209,209,1);
+
+}
+.container-10 {
+position: relative;
+border-radius: 7px;
+background: #B0B0B0;
+display: flex;
+justify-content: center;
+padding: 2px 5.6px 2px 5px;
+box-sizing: border-box;
+}
+
+.g {
+font-weight: 500;
+font-size: 16px;
+color: #FFFFFF;
+}
+
+.container-60 {
+border-radius: 7px;
+background: #F19100;
+position: relative;
+margin-right: 5px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+padding: 2px 5.6px 2px 5px;
+box-sizing: border-box;
+}
+
+.container-19 {
+border-radius: 7px;
+background: #7AC856;
+position: relative;
+margin-right: 5px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+padding: 2px 5.6px 2px 5px;
+box-sizing: border-box;
+}
+
+/*form iao*/
+.form-iao{
+display: flex;
+gap:15%;
+}
+
+.container-1,.container-2,
+.container-3,.container-4,
+.container-5,.container-6 {
+color: #353434;
+display: flex;
+flex-direction: row;
+justify-content: center;
+padding:1vw;
+box-sizing: border-box;
+}
+.container-1{
+background: #ff0000;
+}
+.container-2{
+background: #ff9900;
+}
+.container-3{
+background: #fffb00;
+}
+.container-4{
+background: #6b6b6b;
+}
+.container-5{
+background: #283dfa;
+}
+.container-6{
+background: #da8df8;
+}
+#carré1 {
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 500;
+font-size: larger;
+width: 6vw;
+height: 6vw;
+margin-bottom: 20px;
+
+}
+#carré2 {
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 500;
+font-size: larger;
+width: 6vw;
+height: 6vw;
+margin-bottom: 20px;
+
+}
+
+.g1,.g2,.g4,.g5,.g6 {
+font-weight: 500;
+font-size: 16px;
+color: #FFFFFF;
+}
+.g3{
+font-weight: 500;
+font-size: 16px;
+
+}
+.label-carré{
+display: flex;
+align-items: center;
+}
+
+.form-iao-droit .radio-group label
+{
+display: flex;
+padding: 5px;
+/* background-color: #f0f0f0; */
+color: #333;
+border: 1px solid #cccccc30;
+/* border-radius: 5px; */
+cursor: pointer;
+gap: 15%;
+align-items: center;
+
+}
+.form-iao-droit{
+flex-direction: column;
+display: flex;
+
+}
+
+
+
+.groupe-list{
+padding: 2% 4% 2% 4%;
+width: 50%;
+background-color:rgba(237, 237, 237, 1) ;
+font-weight: 500;
+}
+
+.nav-admidetail {
+display: flex;
+align-items: center;
+gap: 10px;
+background: #FFFFFF;
+}
+
+.nav-admidetail a {
+display: inline-flex;
+text-decoration: none;
+align-items: center;
+color: #000000;
+}
+
+.nav-admidetail a:hover,
+.nav-admidetail a.active4 ,.nav-admidetail a.admidetail {
+background-color: #FFFFFF;
+color: #005E5D;
+border-bottom: 3px solid #005E5D;
+}
+.popupConclusion main,
+.popupAdmission main,
+.popupExamenParaMed main,
+.popupExamenMed main,
+.popupMedecins main ,
+.popupAllergies main,
+.popupAntecedents main,
+.popupObservations main,
+.popupConstantes main,
+.popupFiches main,
+.popupVaccins main,
+.popupDocuments main,
+.popupTaille main
+{
+display: flex;
+flex-direction: column;
+border-radius: 5px;
+margin: 2%;
+padding: 2%;
+overflow: auto;
+height: calc(100% - 4%);
+background-color: #FFFFFF;
+gap: 1vw;
+}
+.popupPrescription main
+{
+display: flex;
+flex-direction: column;
+border-radius: 5px;
+margin: 2%;
+padding: 2%;
+overflow: auto;
+height: calc(100% - 4%);
+background-color: #FFFFFF;
+gap: 3vw;
+}
+.popupPersonneConfidente main{
+display: flex;
+flex-direction: column;
+border-radius: 5px;
+margin: 2%;
+padding: 2%;
+overflow: auto;
+height: calc(100% - 4%);
+background-color: #FFFFFF;
+gap: 1vw;
+}
+.div-form-conclusion input,
+.div-form-conclusion select,
+.diagnosticsContainer div input,
+.ActesContainer input,.div-admission select,
+.div-form-iao input,
+.div-constantes input,
+.div-ExamenMed input, 
+.div-ExamenMed select,
+.div-personneConfidente input,
+.div-personneConfidente-signature input,
+.div-constantes-content input,
+.div-personneConfidente-cestqui-inputAutres
+,
+.div-ficheM input,
+.div-medicamentM input,
+.div-RxImagerieM input,
+.div-biologieM input,
+.div-surveillanceM input,.form-taille input{
+padding: 8px 17.7px 4.8px 12.7px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+.C-button{
+display: flex;
+border: 1px solid #ccc;
+border-radius: 4px;
+width: 12%;
+align-items: center;
+justify-content: center;
+gap: 5%;
+padding: 2px;
+margin-left: 2%;
+}
+.C-button1{
+display: flex;
+border: 1px solid #ccc;
+border-radius: 4px;
+width: fit-content;
+align-items: center;
+justify-content: center;
+gap: 5%;
+padding: 10px;
+margin-left: 2%;
+text-wrap: nowrap;
+}
+.presc-boutton{
+display: flex;
+border: 1px solid #ccc;
+border-radius: 4px;
+width: 23%;
+align-items: center;
+justify-content: center;
+gap: 5%;
+padding: 2px;
+margin-left: -4%;
+text-wrap: nowrap;
+}
+.div-form-conclusion ,
+.div-admission ,
+.form-admission 
+.div-checkbox, 
+.div-form-iao,
+.div-form-iao-checkbox,
+.div-ExamenMed,
+.div-ExamenClin
+{
+margin-left: 3%;
+display: flex;
+gap: 5%;
+}
+.diagnosticsContainer div{
+display: flex;
+gap: 5%;
+
+}
+.diagnosticsContainer{
+margin-left: 3%;
+display: flex;
+flex-direction: column;
+gap: 1vw;
+}
+.ActesContainer{
+margin-left: 3%;
+display: flex;
+gap: 5%;
+}
+.div-form-conclusion label,
+.diagnosticsContainer div label,
+.ActesContainer label{
+width: 150px;
+}
+.popupConclusion h4 ,.popupAdmission h4,
+.popupConclusion h4, .popupExamenMed h4,
+.popupExamenParaMed h4{
+color:rgba(0, 94, 93, 1);
+  font-weight: 600;
+}
+
+.nav-examenMedDet {
+display: flex;
+align-items: center;
+gap: 10px;
+background: #FFFFFF;
+}
+
+.nav-examenMedDet a {
+display: inline-flex;
+text-decoration: none;
+align-items: center;
+color: #000000;
+}
+
+.nav-examenMedDet a:hover,
+.nav-examenMedDet a.activemeddet {
+background-color: #FFFFFF;
+color: #005E5D;
+border-bottom: 3px solid #005E5D;
+}
+
+/* examenParaMedDet*/
+.nav-examenParaMedDet {
+display: flex;
+align-items: center;
+gap: 10px;
+background: #FFFFFF;
+}
+
+.nav-examenParaMedDet a {
+display: inline-flex;
+text-decoration: none;
+align-items: center;
+color: #000000;
+}
+
+.nav-examenParaMedDet a:hover,
+.nav-examenParaMedDet a.activeparameddet {
+background-color: #FFFFFF;
+color: #005E5D;
+border-bottom: 3px solid #005E5D;
+}
+
+#autresInput {
+color: #999;
+}
+
+.div-constantes-container
+{
+width: 90%;
+margin-right:1% ;
+margin-left: 3%;
+display: flex;
+flex-direction: column;
+gap: 1vw;
+padding: 8px 17.7px 4.8px 12.7px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+.div-constantes-content
+{
+width: 90%;
+display: grid;
+grid-template-columns: 17% 15% 5% 20%  15%;
+gap: 2%;
+
+}
+.div-constantes-content-button{  
+width: 90%;
+display: grid;
+grid-template-columns: 41%  20% 15%;
+gap: 2%;}
+
+.const-button ,.fich-button{
+display: flex;
+border: 1px solid #ccc;
+border-radius: 4px;
+
+align-items: center;
+justify-content: center;
+gap: 2%;
+padding: 6px;
+
+}
+.const-button img,.fich-button img,.presc-boutton img{   
+ width: 22px;
+height: 22px;
+}
+
+.icon-titre{
+display: flex;
+gap: 2%;
+align-items: flex-start;
+}
+.icon-titre p{
+color: #005e5d;
+
+}
+
+.div-form-iao-checkbox div{  
+display: flex;
+gap: 5%;
+align-items: center;
+  white-space: nowrap;}
+/* personne confidente*/
+
+.div-personneConfidente label ,
+.div-personneConfidente-signature label{
+width: 70px;
+}
+
+.div-personneConfidente-souhait input,
+.div-personneConfidente-sex input,
+.div-personneConfidente-cestqui input,
+.div-personneConfidente-exemplaires-directives input{
+margin-right: 10px;
+}
+.div-personneConfidente,
+.div-personneConfidente-souhait,
+.div-personneConfidente-sex ,
+.div-personneConfidente-exemplaires-directives,
+.form-médecin div
+{
+display: flex;gap: 5%;
+}
+.div-personneConfidente-cestqui label ,
+.form-personneConfidente h4{
+color: #005E5D;
+}
+.div-personneConfidente-cestqui{
+ display: flex;
+gap: 4%;
+}
+
+.div-personneConfidente-exemplaires-directives p,
+.div-personneConfidente-souhait p{
+white-space: nowrap;
+font-weight: 500;
+}
+.div-personneConfidente-signature1{
+display: flex;gap: 1vw;
+flex-direction: column;
+border: 1px solid #a7a7a7;
+border-radius: 4px; padding: 1%;
+}
+.div-personneConfidente-signature1 div ,
+.div-personneConfidente-souhait div{  
+display: flex;gap: 5%;
+}
+.div-personneConfidente-signature{
+display: grid;gap: 5%;
+grid-template-columns: repeat(2,1fr);
+}
+.div-personneConfidente-signature input{
+padding: 8px 17.7px 4.8px 12.7px;
+border: 1px solid #ccc;
+border-radius: 4px;
+width: 50%;
+}
+/* Formulaire pour les allergies aux médicaments */
+.form-allergie,.form-antecedent{
+display: flex;
+flex-direction: row;
+gap: 1vw;
+}
+.allergie,.antecedent{
+display: flex;
+  gap: 1vw;
+flex-direction: column;
+  
+}
+.aucAllergie,.aucAntecedent{
+display: flex;
+  gap: 1vw;
+}
+.aucAllergie-date,.aucAntecedent-date{
+display: flex;
+gap: 1vw;
+align-items: center;
+}
+.btn-allerg{
+display: flex;
+border: 1px solid #ccc;
+border-radius: 4px;
+align-items: center;
+justify-content: center;
+gap: 2%;
+
+padding: 6px;
+}
+.aucAllergie-date input,
+.aucAntecedent-date input{
+padding: 8px 17.7px 4.8px 12.7px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+.medForm,
+.otherForm,
+.amedForm,
+.achirForm,
+.afamForm,
+.autresForm{
+display: flex;
+gap: 2vw;
+}
+.div-fiche,.div-document{
+display: flex;
+gap: 2%;
+align-items: center;
+
+}
+
+/* Formulaire pour Observation et vaccins */
+.form-observation,.form-vaccins{
+height: 100%;
+}
+.lien-prescription a{
+margin: 5px;
+text-decoration: none;
+font-size: large;
+font-weight: 550;
+color: #000000;
+}
+.lien-prescription {
+padding: 6px;
+background-color: #f3efef;
+
+}
+.popupPrescription form{
+height: 100%; 
+margin-left: 4%;
+}
+.div-surveillanceBoutton
+{display: flex;
+}
+/*STYLE TRADUCTION*/
+
+.VIpgJd-ZVi9od-ORHb-OEVmcd {display: none;}
+  #google_translate_element{padding:0;margin-right:5px}
+   .goog-te-banner-frame.skiptranslate,
+   .goog-te-gadget-simple img,img.goog-te-gadget-icon,.goog-te-menu-value span{display:none!important}
+    .goog-te-menu-frame{box-shadow:none!important} 
+    .goog-te-gadget-simple{background-color:transparent!important;
+    background:url(images/translationW.png)
+     center / 12px no-repeat;background-size: 29px 29px;width: 29px;height:29px;white-space:nowrap;vertical-align: middle;-ms-touch-action: manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select: none;-moz-user-select:none;-ms-user-select:none;user-select:none;border-left:none!important;border-top:none!important;border-bottom:none!important;border-right:none!important;border-radius: 4px} body{top:0px!important} 
+     .darkMode 
+     .goog-te-gadget-simple{background-color:transparent!important;background:url(&quot;data:image/svg+xml,%3Csvg viewBox=&#39;0 0 24 24&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39;%3E%3Cg style=&#39;fill:none;stroke:%23fefefe;stroke-linecap:round;stroke-linejoin:round&#39;%3E%3Cpath d=&#39;M.5,2V18A1.5,1.5,0,0,0,2,19.5H17L10.5.5H2A1.5,1.5,0,0,0,.5,2Z&#39; /%3E%3Cpath d=&#39;M12,4.5H22A1.5,1.5,0,0,1,23.5,6V22A1.5,1.5,0,0,1,22,23.5H13.5l-1.5-4&#39; /%3E%3Cline x1=&#39;17&#39; x2=&#39;13.5&#39; y1=&#39;19.5&#39; y2=&#39;23.5&#39; /%3E%3Cline x1=&#39;14.5&#39; x2=&#39;21.5&#39; y1=&#39;10.5&#39; y2=&#39;10.5&#39; /%3E%3Cline x1=&#39;17.5&#39; x2=&#39;17.5&#39; y1=&#39;9.5&#39; y2=&#39;10.5&#39; /%3E%3Cpath d=&#39;M20,10.5c0,1.1-1.77,4.42-4,6&#39; /%3E%3Cpath d=&#39;M16,13c.54,1.33,4,4.5,4,4.5&#39; /%3E%3Cpath d=&#39;M10.1,7.46a4,4,0,1,0,1.4,3h-4&#39; /%3E%3C/g%3E%3C/svg%3E&quot;) 
+     center / 12px no-repeat;background-size: 20px 20px;} 
+     .headerIcon .gtWgt.gtHide{display:none}
+      .headerIcon .gtWgt .gtIcon{position:absolute;background-color:var(--header-bg)} 
+      .darkMode .headerIcon .gtWgt .gtIcon{background-color:var(--dark-bg)}
+       .postComments.gtHide .gtWgt{display:none} 
+       .postComments.gtHide .shrBtn{margin-right:0} 
+       .postComments .gtWgt .gtLoad{position:relative} 
+       .postComments .gtWgt .gtIcon{position:absolute;background-color:var(--body-bg)}
+       .postComments .gtWgt #google_translate_element{margin-right:0}
+        .darkMode .postComments .gtWgt .gtIcon{background-color:var(--dark-bg)} 
+         .postComments .gtWgt .gtIcon .goog-te-gadget-simple{background-color:transparent!important;background-size: 18px 18px} 
+         .postComments .gtWgt .gtIcon .goog-te-gadget-simple{background-color:transparent!important;background:url(&quot;data:image/svg+xml,%3Csvg viewBox=&#39;0 0 24 24&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39;%3E%3Cg style=&#39;fill:none;stroke:%2348525c;stroke-linecap:round;stroke-linejoin:round&#39;%3E%3Cpath d=&#39;M.5,2V18A1.5,1.5,0,0,0,2,19.5H17L10.5.5H2A1.5,1.5,0,0,0,.5,2Z&#39; /%3E%3Cpath d=&#39;M12,4.5H22A1.5,1.5,0,0,1,23.5,6V22A1.5,1.5,0,0,1,22,23.5H13.5l-1.5-4&#39; /%3E%3Cline x1=&#39;17&#39; x2=&#39;13.5&#39; y1=&#39;19.5&#39; y2=&#39;23.5&#39; /%3E%3Cline x1=&#39;14.5&#39; x2=&#39;21.5&#39; y1=&#39;10.5&#39; y2=&#39;10.5&#39; /%3E%3Cline x1=&#39;17.5&#39; x2=&#39;17.5&#39; y1=&#39;9.5&#39; y2=&#39;10.5&#39; /%3E%3Cpath d=&#39;M20,10.5c0,1.1-1.77,4.42-4,6&#39; /%3E%3Cpath d=&#39;M16,13c.54,1.33,4,4.5,4,4.5&#39; /%3E%3Cpath d=&#39;M10.1,7.46a4,4,0,1,0,1.4,3h-4&#39; /%3E%3C/g%3E%3C/svg%3E&quot;) center / 12px no-repeat;background-size: 18px 18px} 
+         .darkMode .postComments .gtWgt .gtIcon .goog-te-gadget-simple{background-color:transparent!important;background:url(&quot;data:image/svg+xml,%3Csvg viewBox=&#39;0 0 24 24&#39; xmlns=&#39;http://www.w3.org/2000/svg&#39;%3E%3Cg style=&#39;fill:none;stroke:%23d1d1d1;stroke-linecap:round;stroke-linejoin:round&#39;%3E%3Cpath d=&#39;M.5,2V18A1.5,1.5,0,0,0,2,19.5H17L10.5.5H2A1.5,1.5,0,0,0,.5,2Z&#39; /%3E%3Cpath d=&#39;M12,4.5H22A1.5,1.5,0,0,1,23.5,6V22A1.5,1.5,0,0,1,22,23.5H13.5l-1.5-4&#39; /%3E%3Cline x1=&#39;17&#39; x2=&#39;13.5&#39; y1=&#39;19.5&#39; y2=&#39;23.5&#39; /%3E%3Cline x1=&#39;14.5&#39; x2=&#39;21.5&#39; y1=&#39;10.5&#39; y2=&#39;10.5&#39; /%3E%3Cline x1=&#39;17.5&#39; x2=&#39;17.5&#39; y1=&#39;9.5&#39; y2=&#39;10.5&#39; /%3E%3Cpath d=&#39;M20,10.5c0,1.1-1.77,4.42-4,6&#39; /%3E%3Cpath d=&#39;M16,13c.54,1.33,4,4.5,4,4.5&#39; /%3E%3Cpath d=&#39;M10.1,7.46a4,4,0,1,0,1.4,3h-4&#39; /%3E%3C/g%3E%3C/svg%3E&quot;) center / 12px no-repeat;background-size: 18px 18px}
+         .goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed span {text-decoration: none;display: none;}
+.affichage{
+background-color: #dcdcdc;
+}
+.main-content{
+display: none;
+}
+
+.main-content.active {
+display: flex;
+}
+.div-fiche div{
+display: flex;
+  align-items: center;
+}
+.sous-nav-fiches{
+background: #005e5d;
+display: flex;
+align-items: center; 
+/* Ajout de bordure supérieure droite */
+padding-left: 10px;
+padding-right: 10px;
+}
+
+/* ordonnance*/
+
+
+.ordInput{   
+display: flex;
+flex-direction: column;
+gap: 1vw;
+height: 100%;
+padding-bottom: 3vw;
+
+}
+.ordInput div{
+display: flex;
+gap:1vw;
+}
+.ordInput input,.ordInput button,.ordDate input{
+padding: 8px 10px 4px 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+.libelle{
+  margin-right: auto;
+}
+.ordContentTrt{
+  display: flex;
+}
+.ordContentTrt p{
+margin-right: auto;
+margin: 2px;
+}
+th{
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+table {
+
+border: 1px solid black;
+width: 100%;
+border-collapse: collapse;
+}
+td{
+text-align: center;
+}
+.nomMed{
+text-align:left;
+}
+.ordDate{   
+ display: flex;
+gap: 2vw;}
+.ordbook {
+  width: 30px;
+  height: 30px;
+}
+.constantesHaut{
+  display: flex;
+
+  gap: 2vw;
+  flex-direction: column;
+}
+.form-constantes .form-taille{
+  width: 90%;
+  margin-right: 1%;
+  margin-left: 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  padding: 8px 17.7px 4.8px 12.7px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-constantes .form-taille div{  
+  width: 90%;
+display: grid;
+grid-template-columns: 17% 15% 5% 20% 15%;
+gap: 2%;;}
+.popupExamenParaMed .form-taille div{  
+  width: 90%;
+display: grid;
+grid-template-columns: 17% 15% 5% 20% 15%;
+gap: 2%;;}
+.popupExamenParaMed .form-taille{
+  width: 90%;
+  margin-right: 1%;
+  margin-left: 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  padding: 8px 17.7px 4.8px 12.7px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

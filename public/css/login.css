@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #005E5D;
+  
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 2vw;
+    padding: 2%;
+    height: 100%;
+ justify-content: center;
+}
+.container-boxe{
+    border-radius: 9px;
+    background: rgba(217, 217, 217, 0.65);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    width: 40%;
+    margin-bottom: 4vw;
+}
+
+h1 {
+
+    overflow-wrap: break-word;
+    font-weight: 500;
+    font-size: 4vw;
+    color: #000000;
+}
+
+label {
+
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+}
+
+input[type="text"],
+input[type="password"] {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    border: 1px solid rgba(77, 74, 74, 0.61);
+    background: #FFFDFD;
+    /* margin-bottom: 48px; */
+    height: 7vh;
+    width: 100%;
+}
+form{
+    flex-direction: column;
+    display: flex;
+    gap: 2vw;
+    width: 100%;
+    }
+  button {
+     /* display: block; */
+    /* width: 30%; */
+    padding: 4%;
+    background-color: #242534;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    /* font-weight: 400; */
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.logo{
+   
+   
+padding: 2%;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+}
