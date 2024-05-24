@@ -13,13 +13,13 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('nom_prenom');
-            $table->date('dateNaissance');
-            $table->string('telephone');
-            $table->string('email')->unique();
-            $table->string('adresse');
-            $table->string('password');
-            $table->enum('role', ['admin', 'medecin', 'infirmier']);
+            $table->string('nom_prenom')->nullable();
+            $table->date('dateNaissance')->nullable();
+            $table->string('telephone')->nullable();
+            $table->string('email')->unique()->nullable();
+            $table->string('adresse')->nullable();
+            $table->string('password')->nullable();
+            $table->enum('role', ['admin', 'medecin', 'infirmier'])->default('infirmier');
             $table->string('specialite')->nullable(); // Spécialité des médecins
             $table->boolean('first_login')->default(true); // Pour vérifier la première connexion
             $table->timestamps();

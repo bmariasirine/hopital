@@ -14,7 +14,7 @@
 
     <div class="logo"><img src="images/logo.png" alt="Logo"></div>
     <div class="container">
-        <form id="newpass" action="{{ route('postChangerMotDePasse') }}" method="POST">
+        <form id="newpass" action="{{ route('changerMdp.update') }}" method="POST">
             @csrf
             <label for="password">Votre mot de passe actuel:</label>
             <input type="password" class="votre-mot-de-passe-actuel" id="votre-mot-de-passe-actuel" name="password" value="{{ old('password') }}">
